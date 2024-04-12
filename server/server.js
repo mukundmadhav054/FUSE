@@ -10,6 +10,7 @@ const connectDB = require("./config/db");
 
 // Importing all the routes here
 const userRouter = require("./routes/userRouter");
+const contentRouter = require("./routes/contentRouter");
 
 // Using the routes
 app.get("/", (req, res) => {
@@ -30,6 +31,7 @@ app.get("/", (req, res) => {
 });
 
 app.use("/", userRouter);
+app.use("/", contentRouter);
 
 // Function to start and close the server
 const startServer = async () => {
