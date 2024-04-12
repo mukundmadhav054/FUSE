@@ -1,0 +1,63 @@
+[
+    {
+        "name":" Median of Two Sorted Arrays",
+        "description":"The 'Median of Two Sorted Arrays' problem involves finding the median value of two sorted arrays, nums1 and nums2, where the combined length of the arrays is m + n. The challenge lies in efficiently determining this median while ensuring a runtime complexity of O(log(m + n)). The solution should handle scenarios where the arrays may contain both even and odd numbers of elements, and the combined array formed after merging should also be sorted.",
+        "videoEmbed":"<iframe width='560' height='315' src='https://www.youtube.com/embed/F9c7LpRZWVQ?si=qz7ERmVfOfhW8Bx9' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>",
+        "level":"hard"
+    },
+    {
+        "name":"Longest Palindromic Substring",
+        "description":"",
+        "videoEmbed":"<iframe width='560' height='315' src='https://www.youtube.com/embed/n_kL8BkURVA?si=Woko8W9aMTZOREJr' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>",
+        "level":"medium"
+    },
+    {
+        "name":"Reverse Integer",
+        "description":"",
+        "videoEmbed":"<iframe width='560' height='315' src='https://www.youtube.com/embed/0fwrMYPcGQ0?si=5eR9XrYt_vIu1ob1' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>",
+        "level":"medium"
+    },
+    {
+        "name":"Container With Most Water",
+        "description":"",
+        "videoEmbed":"<iframe width='560' height='315' src='https://www.youtube.com/embed/KVU4JNNJkVg?si=MrrLECypVf1JRCNv' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>",
+        "level":"medium"
+    },
+    {
+        "name":"Roman to Integer",
+        "description":"",
+        "videoEmbed":"<iframe width='560' height='315' src='https://www.youtube.com/embed/2FPvU8XmsKU?si=w8RiIUvbuvCNGPhl' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>",
+        "level":"easy"
+    },
+    {
+        "name":"Merge Two Sorted Lists",
+        "description":"",
+        "videoEmbed":"<iframe width='560' height='315' src='https://www.youtube.com/embed/jXu-H7XuClE?si=-mCyiQgQrcvKkT62' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>",
+        "level":"easy"
+    },
+    {
+        "name":"Generate Parentheses",
+        "description":"",
+        "videoEmbed":"<iframe width='560' height='315' src='https://www.youtube.com/embed/7xkPbffc6w8?si=6dqyzrLGJrreOwMM' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>",
+        "level":"medium"
+    },
+    {
+        "name":"",
+        "description":"",
+        "videoEmbed":"",
+        "level":""
+    },
+    {
+        "name":"",
+        "description":"",
+        "videoEmbed":"",
+        "level":""
+    },
+    {
+        "name":"",
+        "description":"",
+        "videoEmbed":"",
+        "level":""
+    }
+
+]
