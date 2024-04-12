@@ -8,13 +8,12 @@ const createUser = async (req, res) => {
       $or: [{ username }, { email }],
     });
     if (existingUser) {
-      let message;
       if (existingUser.username === username) {
-        message = "User already exists with this username!";
+        return res.status(403).json({"message":"User already exists with this username!"})
       } else if (existingUser.email === email) {
-        message = "User already exists with this email!";
+        return res.status(403).json({"message":"User already exists with this email!"})
+
       }
-      return res.status(400).send(message);
     }
 
     const salt = await bcrypt.genSalt(12);
@@ -22,7 +21,7 @@ const createUser = async (req, res) => {
 
     const newUser = await userModel.create({ username, email, password });
     if (newUser) {
-      return res.status(201).json(newUser);
+      return res.status(201).json({"message":"successfully singed up"});
     } else {
       return res.status(400).json({ error: "Failed to sign up new user." });
     }
@@ -39,14 +38,15 @@ const findUser = async (req, res) => {
     const { email, username, password } = req.body;
     const user = await userModel.findOne({ $or: [{ email }, { username }] });
     if (!user) {
-      return res.status(401).json("No user found!");
+      return res.status(401).json({"message":"No user found!"});
     }
 
     const isPasswordCorrect = await bcrypt.compare(password, user.password);
     if (isPasswordCorrect) {
-      return res.status(200).json({ user });
+      return res.status(200).json({"message":"successfully logged in" });
     } else {
-      return res.status(401).json("Incorrect password!");
+      return res.status(401).json({"message":"password is incorrect"});   
+
     }
   } catch (error) {
     console.error("Error occurred while logging in user:", error);
