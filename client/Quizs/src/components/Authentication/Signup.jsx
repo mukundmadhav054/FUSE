@@ -57,15 +57,15 @@ const Signup = () => {
 
             <Text>Sign up to FUSE to continue</Text>
             <form onSubmit={handleSubmit(onSubmit)}>
-              <FormControl mt="10px" minW={"xm"} isInvalid={errors.name}>
+              <FormControl mt="10px" minW={"xm"} isInvalid={errors.username}>
                 <FormLabel>Your name</FormLabel>
                 <Input
                   type="text"
                   aria-label="Your name"
-                  {...register("name", { required: "Name is required" })}
+                  {...register("username", { required: "Name is required" })}
                 />
                 <FormErrorMessage>
-                  {errors.name && errors.name.message}
+                  {errors.username && errors.username.message}
                 </FormErrorMessage>
               </FormControl>
 
