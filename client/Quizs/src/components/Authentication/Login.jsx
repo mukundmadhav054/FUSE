@@ -11,13 +11,14 @@ import {
   FormLabel,
   FormErrorMessage,
   Button,
-  Box,
-  Divider,
-  AbsoluteCenter,
+  useToast
+
 } from "@chakra-ui/react";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 import { Link } from "react-router-dom";
+const toast = useToast()
+
 
 const Login = () => {
   const {
@@ -28,12 +29,31 @@ const Login = () => {
   const onSubmit = async (data) => {
     try {
       const res = await axios.post(
-        "https://fuse-serverside.vercel.app/signup",
+        "https://fuse-serverside.vercel.app/login",
         data
       );
-      console.log(res);
+      if(res.status==200){
+
+        toast({
+          description:"successfully singed up",
+          status: 'success',
+          position:'top',
+          duration: 4000,
+          isClosable: true,
+          colorScheme:'green'
+    
+        })
+      }
     } catch (err) {
-      console.log(err);
+      toast({
+        description:`${err.response.data}`,
+        status: 'success',
+        position:'top',
+        duration: 4000,
+        isClosable: true,
+        colorScheme:'green'
+  
+      })
     }
   };
   return (
@@ -57,6 +77,17 @@ const Login = () => {
 
             <Text>Login to FUSE to continue</Text>
             <form onSubmit={handleSubmit(onSubmit)}>
+            <FormControl mt="10px" minW={"xm"} isInvalid={errors.username}>
+                <FormLabel>Your name</FormLabel>
+                <Input
+                  type="text"
+                  aria-label="Your name"
+                  {...register("username", { required: "Name is required" })}
+                />
+                <FormErrorMessage>
+                  {errors.username && errors.username.message}
+                </FormErrorMessage>
+              </FormControl>
               
               <FormControl mt="10px" minW={"sm"} isInvalid={errors.email}>
                 <FormLabel>Email address</FormLabel>

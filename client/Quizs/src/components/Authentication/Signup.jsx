@@ -11,15 +11,15 @@ import {
   FormLabel,
   FormErrorMessage,
   Button,
-  Box,
-  Divider,
-  AbsoluteCenter,
+  useToast
 } from "@chakra-ui/react";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 import { Link } from "react-router-dom";
 
 const Signup = () => {
+  const toast = useToast()
+
   const {
     register,
     handleSubmit,
@@ -31,9 +31,27 @@ const Signup = () => {
         "https://fuse-serverside.vercel.app/signup",
         data
       );
-      console.log(res);
+      if(res.status==201){
+
+        toast({
+          description:"successfully singed up",
+          status: 'success',
+          position:'top',
+          duration: 4000,
+          isClosable: true,
+          colorScheme:'green'
+    
+        })
+      }
     } catch (err) {
-      console.log(err);
+      toast({
+        description:`${err.response.data}`,
+        position:'top',
+        duration: 4000,
+        isClosable: true,
+        colorScheme:'red'
+  
+      })
     }
   };
   return (
