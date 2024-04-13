@@ -97,7 +97,7 @@ const Homepage = () => {
                       <Image src='Homepage_Img/DSA.jpg' borderRadius={"8px"} />
                       <Text fontSize={"1.37rem"} fontWeight={"semibold"} w={"100%"} pl={"2rem"} mt={"2rem"}>DSA</Text>
                       <Text pl={"2rem"} pr={"7rem"}>Level up your DSA proficiency by delving into advanced concepts like closures, prototypes, async programming, and ES6 features. Master complex algorithms and data structures with confidence.</Text>
-                      <Button w={"100%"} h={"3rem"} mt={"2rem"} background={"#FF9500"} color={"white"} _hover={"none"}>Explore Now</Button>
+                      <Link to='/dsacourse' style={{width:"100%"}}><Button w={"100%"} h={"3rem"} mt={"2rem"} background={"#FF9500"} color={"white"} _hover={"none"}>Explore Now</Button></Link>
                   </VStack>
               </HStack>
               <hr style={{paddingBottom:"3rem"}} />
