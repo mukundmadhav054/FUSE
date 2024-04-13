@@ -77,7 +77,7 @@ const Signup = () => {
       <div className="container">
         <HStack
           width={"60%"}
-          height={"90vh"}
+          height={"80vh"}
           backgroundColor={"white"}
           p={"2%"}
           borderRadius={"10%"}
