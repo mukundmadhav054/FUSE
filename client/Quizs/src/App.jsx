@@ -8,8 +8,21 @@ import CoursePage from "./components/CoursePage";
 import Dsacourse from "./components/courses/Dsacourse";
 import About from "./components/About";
 import ContactUs from "./components/ContactUs";
+import Lenis from '@studio-freight/lenis'
 
 function App() {
+  const lenis = new Lenis()
+
+lenis.on('scroll', (e) => {
+  console.log(e)
+})
+
+function raf(time) {
+  lenis.raf(time)
+  requestAnimationFrame(raf)
+}
+
+requestAnimationFrame(raf)
   return (
     <>
       <Routes>
