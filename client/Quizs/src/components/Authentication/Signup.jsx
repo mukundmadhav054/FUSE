@@ -44,8 +44,9 @@ const Signup = () => {
         })
       }
     } catch (err) {
+      console.log(err);
       toast({
-        description:`${err.response.data}`,
+        description:`${err.response.data.message}`,
         position:'top',
         duration: 4000,
         isClosable: true,
@@ -152,7 +153,6 @@ const Signup = () => {
         />
         <Text>Continue with google</Text>
       </HStack>
-            
           </VStack>
         </HStack>
       </div>

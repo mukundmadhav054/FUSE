@@ -13,7 +13,7 @@ import {
   Button,
   useToast
 
-} from "@chakra-ui/react";
+} from "@chakra-ui/react";  
 import { useForm } from "react-hook-form";
 import axios from "axios";
 import { Link } from "react-router-dom";
@@ -34,7 +34,7 @@ const Login = () => {
       if(res.status==200){
 
         toast({
-          description:"successfully singed up",
+          description:"successfully singed in",
           status: 'success',
           position:'top',
           duration: 4000,
@@ -45,12 +45,11 @@ const Login = () => {
       }
     } catch (err) {
       toast({
-        description:`${err.response.data}`,
-        status: 'success',
+        description:`${err.response.data.message}`,
         position:'top',
         duration: 4000,
         isClosable: true,
-        colorScheme:'green'
+        colorScheme:'red'
   
       })
     }
@@ -128,7 +127,7 @@ const Login = () => {
             </form>
             <Text>
               Don't have an account ?{" "}
-              <Link to={"/login"} color={"blue"}>
+              <Link to={"/signup"} color={"blue"}>
                 Signup
               </Link>
             </Text>
