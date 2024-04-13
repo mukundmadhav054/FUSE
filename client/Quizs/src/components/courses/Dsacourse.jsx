@@ -52,7 +52,7 @@ const Dsacourse = () => {
                       allowFullScreen
                     ></iframe>
                   </div>
-                  <a href={item.questionLink} style={{ color: "blue" }}>
+                  <a href={item.questionLink} style={{ color: "blue" }} target="_blank">
                     Click here to view Problem Statement
                   </a>
                 </div>
@@ -86,7 +86,7 @@ const Dsacourse = () => {
                       allowFullScreen
                     ></iframe>
                   </div>
-                  <a href={item.questionLink} style={{ color: "blue" }}>
+                  <a href={item.questionLink} style={{ color: "blue" }} target="_blank">
                     Click here to view Problem Statement
                   </a>
                 </div>
@@ -120,7 +120,7 @@ const Dsacourse = () => {
                       allowFullScreen
                     ></iframe>
                   </div>
-                  <a href={item.questionLink} style={{ color: "blue" }}>
+                  <a href={item.questionLink} style={{ color: "blue" }} target="_blank">
                     Click here to view Problem Statement
                   </a>
                 </div>
