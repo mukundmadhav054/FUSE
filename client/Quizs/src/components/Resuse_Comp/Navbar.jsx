@@ -13,8 +13,8 @@ const Navbar = () => {
                 <HStack justifyContent={"space-between"} w={"24rem"}>
                     <Link to="/"><Text cursor={"pointer"}>Home</Text></Link>
                     <Link to="/courses"><Text cursor={"pointer"}>Courses</Text></Link>
-                    <Text cursor={"pointer"}>About Us</Text>
-                    <Text cursor={"pointer"}>Contact</Text>
+                    <Link to='/about'><Text cursor={"pointer"}>About Us</Text></Link>
+                    <Link to='/contact'><Text cursor={"pointer"}>Contact</Text></Link>
                 </HStack>
             </HStack>
             <HStack>
