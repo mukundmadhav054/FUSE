@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import "./Signup.css";
 import {
   HStack,
@@ -16,15 +16,32 @@ import {
 import { useForm } from "react-hook-form";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import { signInWithPopup } from "firebase/auth";
+import {auth,provider} from "../../firebaseauth/Config";
+import { useNavigate } from "react-router-dom";
 
 const Signup = () => {
   const toast = useToast()
+
+  const [value,setValue]=useState("");
+  const navigate=useNavigate()
 
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
+
+  const handleLogin=()=>{
+    signInWithPopup(auth,provider).then((data)=>{
+      setValue(data)
+      navigate("/")
+    })
+    .catch((error)=>{
+      console.log(error)
+    })
+  }
+
   const onSubmit = async (data) => {
     try {
       const res = await axios.post(
@@ -60,7 +77,7 @@ const Signup = () => {
       <div className="container">
         <HStack
           width={"60%"}
-          height={"80vh"}
+          height={"90vh"}
           backgroundColor={"white"}
           p={"2%"}
           borderRadius={"10%"}
@@ -139,6 +156,7 @@ const Signup = () => {
       OR
     </Text>
           <HStack
+        onClick={handleLogin}
         border="1px solid gray"
         w={"90%"}
         borderRadius="25px"
