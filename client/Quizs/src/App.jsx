@@ -6,6 +6,8 @@ import { Routes, Route } from "react-router-dom";
 import Login from "./components/Authentication/Login";
 import CoursePage from "./components/CoursePage";
 import Dsacourse from "./components/courses/Dsacourse";
+import About from "./components/About";
+import ContactUs from "./components/ContactUs";
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/dsacourse" element={<Dsacourse />} />
+        <Route path="/about" element={<About/>} />
+        <Route path="/contact" element={<ContactUs/>} />
       </Routes>
     </>
   );

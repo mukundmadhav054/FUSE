@@ -27,9 +27,9 @@ const Foot = () => {
                 </VStack>
                 <VStack>
                     <Text>Follow Us</Text>
-                    <Image src='Footer_Img/Github_logo.svg' cursor={"pointer"} filter={"invert()"}/>
-                    <Image src='Footer_Img/Facebook_Logo.svg' cursor={"pointer"} filter={"invert()"}/>
-                    <Image src='Footer_Img/Instagram_Logo.svg' cursor={"pointer"} filter={"invert()"}/>
+                    <Image src='Footer_Img/Github_logo.svg' cursor={"pointer"} filter={"invert()"} w={"2rem"}/>
+                    <Image src='Footer_Img/Facebook_Logo.svg' cursor={"pointer"} filter={"invert()"} w={"2rem"}/>
+                    <Image src='Footer_Img/Instagram_Logo.svg' cursor={"pointer"} filter={"invert()"} w={"2rem"}/>
                 </VStack>
             </HStack>
         </HStack>
