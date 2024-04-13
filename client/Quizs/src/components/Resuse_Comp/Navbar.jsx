@@ -18,8 +18,8 @@ const Navbar = () => {
                 </HStack>
             </HStack>
             <HStack>
-                <Button background={"none"} _hover={"none"}>Sign Up</Button>
-                <Button background={"#FF9500"} _hover={"none"} width={"6rem"} color={"white"}>Login</Button>
+                <Link to={"/signup"}><Button background={"none"} _hover={"none"}>Sign Up</Button></Link>
+                <Link to={"/login"}><Button background={"#FF9500"} _hover={"none"} width={"6rem"} color={"white"}>Login</Button></Link>
             </HStack>
         </HStack>
     </>
