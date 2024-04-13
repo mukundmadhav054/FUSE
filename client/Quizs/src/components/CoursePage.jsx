@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from './Resuse_Comp/Navbar'
 import { HStack, Heading, VStack,Image,Text,Button} from '@chakra-ui/react'
+import { Link } from 'react-router-dom'
 
 const CoursePage = () => {
   return (
@@ -11,7 +12,9 @@ const CoursePage = () => {
                 <VStack h={"23rem"} border={"2px solid white"} borderRadius={"8px"} background={"white"} w={"30%"} justifyContent={"space-between"} >
                     <Image src='Courses_Img/DSA.webp' borderRadius={"8px"} />
                     <Text fontSize={"1.37rem"} fontWeight={"semibold"} w={"100%"} pl={"2rem"} mt={"1rem"}>DSA</Text>
+            <Link to={"/dsacourse"}>
                     <Button w={"100%"} h={"3rem"} color={"white"} background={"#FF9500"} _hover={"none"}>Start Now</Button>
+            </Link>
                 </VStack>
                 <VStack h={"23rem"} border={"2px solid white"} borderRadius={"8px"} background={"white"} w={"30%"} justifyContent={"space-between"}>
                     <Image src='Courses_Img/Front_end.png' borderRadius={"8px"} />
