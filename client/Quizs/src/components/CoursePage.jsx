@@ -13,7 +13,7 @@ const CoursePage = () => {
                 <VStack h={"23rem"} border={"2px solid white"} borderRadius={"8px"} background={"white"} w={"30%"} justifyContent={"space-between"} >
                     <Image src='Courses_Img/DSA.webp' borderRadius={"8px"} />
                     <Text fontSize={"1.37rem"} fontWeight={"semibold"} w={"100%"} pl={"2rem"} mt={"1rem"}>DSA</Text>
-            <Link to={"/dsacourse"}>
+            <Link to={"/dsacourse"} style={{"width":"100%"}}>
                     <Button w={"100%"} h={"3rem"} color={"white"} background={"#FF9500"} _hover={"none"}>Start Now</Button>
             </Link>
                 </VStack>

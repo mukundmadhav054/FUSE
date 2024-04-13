@@ -12,7 +12,7 @@ const Dsacourse = () => {
   const [data, setData] = useState([]);
   const getData = async () => {
     const res = await axios
-      .get("http://localhost:3000/dsa-topics")
+      .get("https://fuse-serverside.vercel.app/dsa-topics")
       .then((res) => {
         setData(res.data);
       })
