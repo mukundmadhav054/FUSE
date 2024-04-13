@@ -23,6 +23,7 @@ const Dsacourse = () => {
   useEffect(() => {
     getData();
   }, []);
+  console.log(data);
   return (
     <>
       <Accordion allowToggle>
@@ -52,6 +53,7 @@ const Dsacourse = () => {
                       allowFullScreen
                     ></iframe>
                   </div>
+                  <a href={item.questionLink} style={{"color":"blue"}}>Click here to view Problem Statement</a>
                 </div>
               ))}
           </AccordionPanel>
