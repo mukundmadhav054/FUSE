@@ -1,63 +1,70 @@
-[
-    {
-        "name":" Median of Two Sorted Arrays",
-        "description":"The 'Median of Two Sorted Arrays' problem involves finding the median value of two sorted arrays, nums1 and nums2, where the combined length of the arrays is m + n. The challenge lies in efficiently determining this median while ensuring a runtime complexity of O(log(m + n)). The solution should handle scenarios where the arrays may contain both even and odd numbers of elements, and the combined array formed after merging should also be sorted.",
-        "videoEmbed":"<iframe width='560' height='315' src='https://www.youtube.com/embed/F9c7LpRZWVQ?si=qz7ERmVfOfhW8Bx9' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>",
-        "level":"hard"
-    },
-    {
-        "name":"Longest Palindromic Substring",
-        "description":"",
-        "videoEmbed":"<iframe width='560' height='315' src='https://www.youtube.com/embed/n_kL8BkURVA?si=Woko8W9aMTZOREJr' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>",
-        "level":"medium"
-    },
-    {
-        "name":"Reverse Integer",
-        "description":"",
-        "videoEmbed":"<iframe width='560' height='315' src='https://www.youtube.com/embed/0fwrMYPcGQ0?si=5eR9XrYt_vIu1ob1' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>",
-        "level":"medium"
-    },
-    {
-        "name":"Container With Most Water",
-        "description":"",
-        "videoEmbed":"<iframe width='560' height='315' src='https://www.youtube.com/embed/KVU4JNNJkVg?si=MrrLECypVf1JRCNv' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>",
-        "level":"medium"
-    },
-    {
-        "name":"Roman to Integer",
-        "description":"",
-        "videoEmbed":"<iframe width='560' height='315' src='https://www.youtube.com/embed/2FPvU8XmsKU?si=w8RiIUvbuvCNGPhl' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>",
-        "level":"easy"
-    },
-    {
-        "name":"Merge Two Sorted Lists",
-        "description":"",
-        "videoEmbed":"<iframe width='560' height='315' src='https://www.youtube.com/embed/jXu-H7XuClE?si=-mCyiQgQrcvKkT62' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>",
-        "level":"easy"
-    },
-    {
-        "name":"Generate Parentheses",
-        "description":"",
-        "videoEmbed":"<iframe width='560' height='315' src='https://www.youtube.com/embed/7xkPbffc6w8?si=6dqyzrLGJrreOwMM' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>",
-        "level":"medium"
-    },
-    {
-        "name":"",
-        "description":"",
-        "videoEmbed":"",
-        "level":""
-    },
-    {
-        "name":"",
-        "description":"",
-        "videoEmbed":"",
-        "level":""
-    },
-    {
-        "name":"",
-        "description":"",
-        "videoEmbed":"",
-        "level":""
-    }
-
-]
+[{
+  "name": "Median of Two Sorted Arrays",
+  "description": "The 'Median of Two Sorted Arrays' problem involves finding the median value of two sorted arrays, nums1 and nums2, where the combined length of the arrays is m + n. The challenge lies in efficiently determining this median while ensuring a runtime complexity of O(log(m + n)). The solution should handle scenarios where the arrays may contain both even and odd numbers of elements, and the combined array formed after merging should also be sorted.",
+  "videoEmbed": "q6IEA26hvXc",
+  "level": "hard",
+  "questionLink": "https://leetcode.com/problems/median-of-two-sorted-arrays/"
+},
+{
+  "name": "Longest Palindromic Substring",
+  "description": "The 'Longest Palindromic Substring' problem is a classic algorithmic challenge that seeks to find the longest substring within a given string that is also a palindrome. A palindrome is a sequence of characters that reads the same backward as forward. For example, 'racecar' and 'level' are palindromes.",
+  "videoEmbed": "XYQecbcd6_c",
+  "level": "medium",
+  "questionLink": "https://leetcode.com/problems/longest-palindromic-substring/"
+},
+{
+  "name": "Reverse Integer",
+  "description": "The task at hand is to reverse the digits of a given 32-bit signed integer while ensuring that the reversed integer stays within the same range. This problem is not just about flipping the digits but also requires handling the integer's sign and potential overflow issues. Initially, we must consider whether the integer is positive or negative, as this impacts our approach to digit reversal. We handle negative integers by remembering the sign and working with the absolute value. The actual reversal involves iteratively extracting the last digit of the integer and appending it to the result. We employ modulo and integer division operations to accomplish this. Throughout this process, we remain vigilant about overflow, ensuring that the reversed integer does not exceed the 32-bit signed integer range. If it does, we return 0 to indicate overflow. Moreover, we must account for edge cases, such as integers ending with one or more zeros or already being at the limits of the 32-bit range. Addressing these complexities ensures a robust solution. In conclusion, solving this problem necessitates a thorough understanding of the constraints, meticulous handling of sign and overflow issues, and careful consideration of edge cases to produce a correct and efficient solution.",
+  "videoEmbed": "0fwrMYPcGQ0",
+  "level": "medium",
+  "questionLink": "https://leetcode.com/problems/reverse-integer/"
+},
+{
+  "name": "Container With Most Water",
+  "description": "This problem can be solved using the two-pointer approach. We initialize two pointers, one at the beginning of the array and the other at the end. The idea is to calculate the area formed by the two lines at the current positions of the pointers (the width being the difference between the indices of the pointers and the height being the minimum height of the two lines), and then move the pointer pointing to the shorter line towards the other end, hoping to find a taller line and potentially a larger area.",
+  "videoEmbed": "KVU4JNNJkVg",
+  "level": "medium",
+  "questionLink": "https://leetcode.com/problems/container-with-most-water/"
+},
+{
+  "name": "Roman to Integer",
+  "description": "The 'Roman to Integer' problem involves converting a Roman numeral string into its corresponding integer value. In Roman numerals, certain letters represent specific numeric values: 'I' for 1, 'V' for 5, 'X' for 10, 'L' for 50, 'C' for 100, 'D' for 500, and 'M' for 1000. However, there are also combinations of letters that represent different values, such as 'IV' for 4, 'IX' for 9, 'XL' for 40, 'XC' for 90, 'CD' for 400, and 'CM' for 900. ",
+  "videoEmbed": "3jdxYj3DD98",
+  "level": "easy",
+  "questionLink": "https://leetcode.com/problems/roman-to-integer/"
+},
+{
+  "name": "Merge Two Sorted Lists",
+  "description": "The 'Merge Two Sorted Lists' problem involves combining two sorted linked lists into a single sorted linked list. Given two linked lists, each sorted in non-decreasing order, the objective is to merge them into a single linked list that preserves the sorted order. This problem is commonly encountered in various programming scenarios, especially when dealing with linked list manipulation.",
+  "videoEmbed": "XIdigk956u0",
+  "level": "easy",
+  "questionLink": "https://leetcode.com/problems/merge-two-sorted-lists/"
+},
+{
+  "name": "Generate Parentheses",
+  "description": "The 'Generate Parentheses' problem involves generating all possible valid combinations of parentheses given a certain number,n, representing the number of pairs of parentheses. The goal is to create all valid combinations of n pairs of opening and closing parentheses. A valid combination is one where each opening parenthesis is matched with a closing parenthesis and the parentheses are properly nested. For example, if n = 3, valid combinations would include '((()))', '(()())', '(())()', '()(())', and '()()()'.",
+  "videoEmbed": "7xkPbffc6w8",
+  "level": "medium",
+  "questionLink": "https://leetcode.com/problems/generate-parentheses/"
+},
+{
+  "name": "3Sum",
+  "description": "The '3Sum' problem is a classic algorithmic challenge that involves finding all unique triplets in an array whose sum equals a target value. Given an array of integers, the task is to identify all sets of three numbers that add up to the target sum. It's important to note that each triplet must be unique, meaning no duplicate triplets should be returned.",
+  "videoEmbed": "DhFh8Kw7ymk",
+  "level": "medium",
+  "questionLink": "https://leetcode.com/problems/3sum/"
+},
+{
+  "name": "Letter Combinations of a Phone Number",
+  "description": "The 'Letter Combinations of a Phone Number' problem involves generating all possible letter combinations that can be formed by pressing digits on a phone keypad corresponding to a given numeric string. Each digit can represent a set of letters as follows:\n2: 'abc' \n3: 'def' \n4: 'ghi' \n5: 'jkl' \n6: 'mno' \n7: 'pqrs' \n8: 'tuv' \n9: 'wxyz' \n\nThe goal is to produce all combinations of letters that can be formed by selecting one letter from each digit's corresponding set. For instance, if the input numeric string is '23', the possible letter combinations are 'ad', 'ae', 'af', 'bd', 'be', 'bf', 'cd', 'ce', 'cf'.",
+  "videoEmbed": "0snEunUacZY",
+  "level": "medium",
+  "questionLink": "https://leetcode.com/problems/letter-combinations-of-a-phone-number/"
+},
+{
+  "name": "Combination Sum II",
+  "description": "'Combination Sum II' is a problem that involves finding all unique combinations of numbers in a given array that sum up to a specific target value. However, each number in the array may only be used once in each combination, and duplicate combinations should be avoided. \n\nTo solve this problem, we typically use a backtracking approach. This involves exploring all possible combinations by recursively selecting numbers from the array and updating the current sum. At each step, we make decisions about whether to include the current number in the combination or not. To avoid duplicates, we skip over repeated occurrences of the same number while generating combinations.",
+  "videoEmbed": "embed/G1fRTGRxXU8",
+  "level": "medium",
+  "questionLink": "https://leetcode.com/problems/combination-sum-ii/"
+}]
